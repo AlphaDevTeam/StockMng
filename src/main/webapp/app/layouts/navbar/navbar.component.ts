@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
   swaggerEnabled: boolean;
   modalRef: NgbModalRef;
   version: string;
+  companyString: string;
 
   constructor(
     private loginService: LoginService,
@@ -27,6 +28,7 @@ export class NavbarComponent implements OnInit {
     private router: Router
   ) {
     this.version = VERSION ? 'v' + VERSION : '';
+    this.companyString = 'Test';
     this.isNavbarCollapsed = true;
   }
 

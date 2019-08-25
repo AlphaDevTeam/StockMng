@@ -1,0 +1,31 @@
+{
+    "name": "CustomerAccountBalance",
+    "fields": [
+        {
+            "fieldName": "balance",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "location",
+            "otherEntityRelationshipName": "customerAccountBalance",
+            "relationshipName": "location",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190824183142",
+    "javadoc": "CustomerAccount Balance Entity.\n@author Mihindu Karunarathne.",
+    "entityTableName": "customer_account_balance",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

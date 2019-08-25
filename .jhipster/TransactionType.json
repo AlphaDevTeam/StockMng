@@ -1,0 +1,30 @@
+{
+    "name": "TransactionType",
+    "fields": [
+        {
+            "fieldName": "transactionypeCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "transactionType",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190824183150",
+    "javadoc": "TransactionType Entity.\n@author Mihindu Karunarathne.",
+    "entityTableName": "transaction_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
